@@ -44,7 +44,7 @@ fig.tight_layout()
 bottom = np.zeros(1)
 bars = []
 for key, val in desdic.items():
-    # plot = ax.bar(["dés"], val, label=str(key), bottom=bottom)
+    # plot = ax.bar(["dés"], git push -u origin mainval, label=str(key), bottom=bottom)
     bars.append(ax[0].bar(["dés"], val, label=f"dé {key}", bottom=bottom))
     bottom += val
 
@@ -71,9 +71,7 @@ text = ax[2].text(0.1, 0.9, f"{resultats}", va="center", fontsize=15, wrap=True)
 def next(event):
     result = randint(1, de)
     resultats.append(result)
-    print(result)
     updatedic(result)
-    print(desdic)
     bottoms = np.zeros(1)
     values = list(desdic.values())
     # print(len(values))
